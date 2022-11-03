@@ -1,0 +1,51 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "quitq",
+  "password": "qui"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "quitq",
+  "password": "qui"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzYxZDJiMGRhMDlhYzdjYWUzY2NkNmMiLCJpYXQiOjE2NjczNzIwOTB9.mAxuoEDJk8sMYxmu1i6uwVPVRK7j1sev2y4DEoeHIQA
+
+{
+  "title": "MongoDB",
+  "description": "Learn MongoDB Henry Web Dev",
+  "url": "https://www.youtube.com/watch?v=rgFd17fyM4A&t=421s&ab_channel=HenryWebDev",
+  "status": "LEARNING"
+}
+
+### 
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzYxZDJiMGRhMDlhYzdjYWUzY2NkNmMiLCJpYXQiOjE2NjczNzIwOTB9.mAxuoEDJk8sMYxmu1i6uwVPVRK7j1sev2y4DEoeHIQA
+
+###
+PUT http://localhost:5000/api/posts/6361f8fc065eccc99f7899e5
+Content-Type: application/json
+Authorization: Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzYxZDJiMGRhMDlhYzdjYWUzY2NkNmMiLCJpYXQiOjE2NjczNzIwOTB9.mAxuoEDJk8sMYxmu1i6uwVPVRK7j1sev2y4DEoeHIQA
+
+{
+  "title": "NodeJs ReactJs",
+  "description": "Learn nodejs reactjs Henry Web Dev",
+  "url": "https://www.youtube.com/watch?v=rgFd17fyM4A&t=421s&ab_channel=HenryWebDev",
+  "status": "LEARNING"
+}
+
+###
+DELETE  http://localhost:5000/api/posts/6361f8fc065eccc99f7899e5
+Content-Type: application/json
+Authorization: Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzYxZDJiMGRhMDlhYzdjYWUzY2NkNmMiLCJpYXQiOjE2NjczNzIwOTB9.mAxuoEDJk8sMYxmu1i6uwVPVRK7j1sev2y4DEoeHIQA
