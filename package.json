@@ -32,7 +32,8 @@
     "zod": "^3.19.1"
   },
   "scripts": {
-    "start": "nodemon dist/app.js"
+    "start": "nodemon dist/app.js",
+    "dev": "nodemon dist/app.js"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",

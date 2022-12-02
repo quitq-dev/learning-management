@@ -5,5 +5,5 @@ RUN yarn
 COPY package.json ./
 run yarn
 COPY . .
-CMD ["node", "server.js"]
+CMD ["yarn", "dev"]
 

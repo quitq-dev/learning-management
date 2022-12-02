@@ -1,9 +1,9 @@
-import { DB_URL } from './index'
+import { mongoURL } from './main'
 import { connect } from "mongoose"
 
 export const connectDB = async () => {
   try {
-    await connect(DB_URL)
+    await connect(mongoURL)
     console.log("MongoDB Connected...")
   } catch (err: any) {
     console.error(err.message)
