@@ -14,13 +14,14 @@ services:
     networks: 
       - common
     environment:
-      PORT: 3000
+      APP_PORT: 3000
+      MONGO_URL: 'mongodb+srv://quitq-dev:Quangqui12345@mern-learnit.n1i7rnl.mongodb.net/?retryWrites=true&w=majority'
 
   mongo: 
     container_name: mongo
     image: mongo
     ports:
-      - 27017:27017
+      - 3006:3006
     volumes:
       - ./data:/data/db
     networks: 
